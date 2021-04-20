@@ -12,7 +12,7 @@ const SingleOrder = (props) => {
         .then(res => res.json())
         .then(data => {
             alert('Order deleted successfully');
-            history.go(0);
+            history.replace('/');
         })
     };
     return (
